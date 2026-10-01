@@ -146,9 +146,8 @@ The API:
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
-cd CloudOps
-
+git clone https://github.com/Rishav478/cloudops-ai-assistant.git
+cd cloudops-ai-assistant
 ```
 
 ### 2. Install dependencies

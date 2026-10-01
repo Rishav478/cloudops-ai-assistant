@@ -14,11 +14,6 @@ client = Groq(
     api_key=api_key
 )
 
-if api_key:
-    print("Groq API key loaded successfully.")
-else:
-    print("Groq API key not found.") 
-
 
 def generate_llm_response(incident_prompt):
     response = client.chat.completions.create(
@@ -35,8 +30,6 @@ def generate_llm_response(incident_prompt):
     )
     llm_response = response.choices[0].message.content
     parsed_response = json.loads(llm_response)
-    print("Groq response type:", type(llm_response))
-    print("Parsed response type:", type(parsed_response))
 
     return parsed_response
 

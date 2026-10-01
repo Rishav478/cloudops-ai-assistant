@@ -28,8 +28,6 @@ OUTPUT_PATH = PROJECT_ROOT / "output" / "incident_summary.json"
 def validate_logs(logs):
     if not isinstance(logs,list) or not logs:
         return (False,"Logs must be provided as a list.",[])
-    if len(logs) == 0:
-        return (False,"No logs available for analysis.",[])
 
     validated_logs = []
 
@@ -40,7 +38,7 @@ def validate_logs(logs):
             cleaned_log = validated_log.model_dump()
             validated_logs.append(cleaned_log)
         except ValidationError as e:
-            return False, str[e], []
+            return False, str(e), []
 
     return (True,"Logs are valid", validated_logs)
           
