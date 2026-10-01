@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-08-30T10:01:00",
+    "service_name": "payment-service",
+    "log_level": "ERROR",
+    "message": "Database timeout while processing payment",
+    "latency_ms": 2200,
+    "request_id": "req-101"
+  },
+  {
+    "timestamp": "2026-08-30T10:02:00",
+    "service_name": "payment-service",
+    "log_level": "ERROR",
+    "message": "RDS connection timeout",
+    "latency_ms": 1800,
+    "request_id": "req-102"
+  },
+  {
+    "timestamp": "2026-08-30T10:03:00",
+    "service_name": "order-api",
+    "log_level": "INFO",
+    "message": "Order created successfully",
+    "latency_ms": 300,
+    "request_id": "req-103"
+  },
+  {
+    "timestamp": "2026-08-30T10:04:00",
+    "service_name": "checkout-service",
+    "log_level": "ERROR",
+    "message": "Lambda timeout during checkout",
+    "latency_ms": 1500,
+    "request_id": "req-104"
+  },
+  {
+    "timestamp": "2026-08-30T10:05:00",
+    "service_name": "payment-service",
+    "log_level": "WARN",
+    "message": "High latency detected",
+    "latency_ms": 1200,
+    "request_id": "req-105"
+  }
+]
